@@ -1,3 +1,7 @@
 <h1>A create view scripts</h1>
 
-{{form}}
+<form method="POST"> {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Save Val">
+</form>
+<input type="text" name="test" id="test" placeholder="testing">

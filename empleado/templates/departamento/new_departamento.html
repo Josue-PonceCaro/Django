@@ -1,0 +1,19 @@
+<h1>New departamento</h1>
+<form method="POST"> {% csrf_token %}
+    <h3>Datos empleado</h3>
+    <p>
+        {{form.nombre}}
+    </p>
+    <p>
+        {{form.apellidos}}
+    </p>
+    <h3>Datos Del departament</h3>
+    <p>
+        {{form.departament}}
+    </p>
+    <p>
+        {{form.shortname}}
+    </p>
+    
+    <input type="submit" value="Save Deparmetn">
+</form>

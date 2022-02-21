@@ -1,0 +1,6 @@
+<h1>Agregar empleado</h1>
+<!-- https://www.geeksforgeeks.org/form-as_p-render-django-forms-as-paragraph/ -->
+<form method="POST"> {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="Guardar">
+</form>

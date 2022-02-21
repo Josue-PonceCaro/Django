@@ -1,0 +1,11 @@
+<h1>Buscador de Empleados</h1>
+<form method='get'> {% csrf_token %}
+    <label for='fname'>Insert name: </label>
+    <input type='text', id='fname', name='fname', placeholder="Ingrese el nombre aqui">
+    <input type='submit' value="Search">
+</form>
+<ul>
+    {% for e in empleados %}
+        <li>{{e}}</li>
+    {% endfor %}
+</ul>

@@ -12,7 +12,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dbempleado',
         'USER':'josue',
-        'PASSWORD': '', # ADD PASSWORD
+        'PASSWORD': 'ponce.20', # ADD PASSWORD
         'HOST': 'localhost',
         'PORT': '5432',
         # 'NAME': BASE_DIR / 'db.sqlite3',
@@ -23,3 +23,4 @@ DATABASES = {
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR.child('static')]
